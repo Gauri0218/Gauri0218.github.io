@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gauri Singh – Data Analyst & AI Developer</title>
+<meta name="description" content="Portfolio of Gauri Singh: data analytics, machine learning and full-stack projects.">
+<meta property="og:title" content="Gauri Singh – Data Analyst & AI Developer">
+<meta property="og:description" content="Data analytics, machine learning and full-stack projects.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1b3a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5fa;--surface:#ffffff;--ink:#0f1a33;--muted:#58647f;--line:#dbe1ee;
+  --accent:#2f5bff;--accent-ink:#ffffff;--tag:#e6ecff;--tag-ink:#1f3fc4;--teal:#13b5a1;
+  --band:#0b1b3a;--band-ink:#f2f5ff;--band-muted:#aab6d6;--shadow:0 10px 30px rgba(15,26,51,.08);
+  color-scheme:light;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0a1020;--surface:#131c33;--ink:#eaf0ff;--muted:#a1adcb;--line:#26324f;--accent:#7fa2ff;--accent-ink:#0a1020;--tag:#1f2c52;--tag-ink:#b9ccff;--band:#0d1a38;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0a1020;--surface:#131c33;--ink:#eaf0ff;--muted:#a1adcb;--line:#26324f;--accent:#7fa2ff;--accent-ink:#0a1020;--tag:#1f2c52;--tag-ink:#b9ccff;--band:#0d1a38;--shadow:0 10px 30px rgba(0,0,0,.35);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.65}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.band{background:var(--band);color:var(--band-ink);background-image:radial-gradient(900px 420px at 85% -10%,rgba(47,91,255,.35),transparent 60%),radial-gradient(600px 300px at 0% 110%,rgba(19,181,161,.18),transparent 60%)}
+nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 28px;padding:22px 0;font-weight:600}
+nav .brand{font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--band-ink);text-decoration:none}
+nav .links{display:flex;flex-wrap:wrap;gap:6px 24px}
+nav .links a{color:var(--band-muted);text-decoration:none;font-size:.97rem}
+nav .links a:hover{color:#fff}
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center;padding:56px 0 88px}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:.9rem;font-weight:600;color:var(--band-muted);margin-bottom:22px}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(19,181,161,.25)}
+.hero h1{font-size:clamp(2.8rem,7.5vw,5.2rem);line-height:1;font-weight:800;letter-spacing:-.04em;margin:0 0 10px}
+.role{font-size:clamp(1.15rem,2.6vw,1.5rem);font-weight:600;color:#8fb0ff;margin:0 0 20px}
+.hero p.lead{font-size:1.12rem;max-width:33em;margin:0 0 32px;color:var(--band-muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 24px;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid var(--accent);transition:transform .15s,box-shadow .15s}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.band .btn.primary{background:#fff;border-color:#fff;color:#0b1b3a}
+.band .btn.ghost{color:#fff;border-color:rgba(255,255,255,.4)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.glance{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:28px;backdrop-filter:blur(6px)}
+.mono{width:72px;height:72px;border-radius:20px;background:linear-gradient(135deg,#2f5bff,#13b5a1);display:grid;place-items:center;font-weight:800;font-size:1.7rem;letter-spacing:-.03em;color:#fff;margin-bottom:20px}
+.glance dl{margin:0;display:grid;gap:18px}
+.glance dt{font-size:2rem;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.glance dd{margin:2px 0 0;color:var(--band-muted);font-size:.95rem}
+section{padding:72px 0 8px}
+section+section{padding-top:64px}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-.03em;font-weight:800;margin:0 0 32px;line-height:1.1}
+h2::before{content:"";display:block;width:44px;height:5px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--teal));margin-bottom:16px}
+h3{font-size:1.15rem;margin:0 0 4px;line-height:1.3}
+.about{max-width:42em;font-size:1.12rem;color:var(--muted)}
+.job{display:grid;grid-template-columns:160px 1fr;gap:8px 8px;padding:0 0 28px}
+.when{color:var(--muted);font-weight:600;font-size:.95rem;padding-top:3px}
+.job>div:nth-child(2){border-left:2px solid var(--line);padding-left:30px;position:relative}
+.job>div:nth-child(2)::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.job:last-child>div:nth-child(2){border-left-color:transparent}
+.job p{margin:8px 0 0;max-width:42em;color:var(--muted)}
+.org{color:var(--accent);font-weight:600}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chip{font:inherit;font-weight:600;padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow);transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card[hidden]{display:none}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card .links{margin-top:auto;padding-top:6px;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+.tags li{background:var(--tag);color:var(--tag-ink);border-radius:999px;padding:3px 11px;font-size:.82rem;font-weight:600}
+.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.skillgrid div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.skillgrid h3{margin-bottom:12px}
+ul.plain{padding-left:1.1em;margin:0;max-width:44em;color:var(--muted)}
+ul.plain li{margin:9px 0}
+.contact{background:var(--band);color:var(--band-ink);border-radius:24px;padding:48px 40px;margin-top:72px;background-image:radial-gradient(500px 260px at 100% 0,rgba(47,91,255,.35),transparent 60%)}
+.contact h2{margin-bottom:16px}
+.contact p{max-width:34em;color:var(--band-muted);margin:0 0 14px}
+.contact .big{font-size:clamp(1.3rem,4vw,2rem);font-weight:800;letter-spacing:-.02em;word-break:break-word}
+.contact .big a{color:#fff}
+.contact .btns{margin-top:20px}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:36px;padding:32px 0 56px}
+}
+@media (max-width:640px){
+  .job{grid-template-columns:1fr;padding-bottom:22px}
+  .job>div:nth-child(2){margin-top:4px}
+  .contact{padding:36px 24px}
+}
+button.btn{font:inherit;font-weight:700;cursor:pointer}
+.contact .btn.primary{background:#fff;border-color:#fff;color:#0b1b3a}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(19,181,161,.6)}100%{box-shadow:0 0 0 12px rgba(19,181,161,0)}}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.hero>div>*{animation:rise .7s cubic-bezier(.2,.7,.2,1) backwards}
+.hero>div>*:nth-child(2){animation-delay:.08s}
+.hero>div>*:nth-child(3){animation-delay:.16s}
+.hero>div>*:nth-child(4){animation-delay:.24s}
+.hero>div>*:nth-child(5){animation-delay:.32s}
+.glance{animation:rise .8s cubic-bezier(.2,.7,.2,1) .35s backwards}
+.mono{animation:drift 5s ease-in-out infinite}
+.status i{animation:pulse 2s ease-out infinite}
+.reveal{opacity:0}
+.reveal.in{opacity:1;animation:rise .7s cubic-bezier(.2,.7,.2,1) backwards}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1}.btn:hover,.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="band"><div class="wrap">
+  <nav aria-label="Sections">
+    <a class="brand" href="#top">Gauri Singh</a>
+    <div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#learning">Education</a><a href="#contact">Contact</a></div>
+  </nav>
+  <header class="hero" id="top">
+    <div>
+      <div class="status"><i></i>Open to data analyst and AI roles</div>
+      <h1>Gauri Singh</h1>
+      <p class="role">Data analyst and AI developer</p>
+      <p class="lead">I turn raw sales, operations and marketing data into clear reports, and build machine learning and web projects around it.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="Gauri_Singh_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+      </div>
+    </div>
+    <aside class="glance" aria-label="At a glance">
+      <div class="mono" aria-hidden="true">GS</div>
+      <dl>
+        <div><dt>3 internships</dt><dd>Analytics, AI fellowship and full stack</dd></div>
+        <div><dt>93.73%</dt><dd>Test accuracy in my published poultry disease research</dd></div>
+        <div><dt>8,500+</dt><dd>Images in my chicken disease classification project</dd></div>
+      </dl>
+    </aside>
+  </header>
+</div></div>
+<div class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="about">I have hands-on experience in data cleaning, trend analysis and performance reporting across retail sales, operations and marketing data. I work with SQL, Excel, Power BI, Tableau and Python (Pandas, NumPy), and my machine learning projects turn raw data into practical, decision-ready insights. I want to support reporting and business decisions with clear, accurate analysis.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="when">Feb 2026 – Apr 2026</div>
+      <div><h3>Full Stack Web Developer Intern</h3><div class="org">Binaried Technology Pvt. Ltd.</div>
+      <p>Developed web applications with React, Node.js and MongoDB. Built REST APIs with authentication and authorization, and supported debugging and feature delivery in an Agile team.</p></div>
+    </div>
+    <div class="job">
+      <div class="when">Jan 2026 – Apr 2026</div>
+      <div><h3>Bharat Unnati AI Fellow</h3><div class="org">Learners Byte Global InfoVision</div>
+      <p>Built an AI Student Lifecycle Intelligence System using n8n, the Groq API (LLaMA 3 8B) and specialized agents for student support. Implemented JavaScript intent routing, REST API integration and a responsive chatbot connected to an n8n webhook, and used prompt engineering to automate query handling.</p></div>
+    </div>
+    <div class="job">
+      <div class="when">Jul 2025 – Oct 2025</div>
+      <div><h3>Data Analytics Intern</h3><div class="org">Egg Bucket Retailing, Bengaluru</div>
+      <p>Analyzed retail sales, operations and marketing data. Cleaned data, analyzed trends and produced performance reports for HR, product and software teams to support business decisions.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects and research</h2>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="ml" aria-pressed="false">Machine learning</button>
+      <button class="chip" data-f="web" aria-pressed="false">Web apps</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card" data-t="ml">
+        <h3>PoultryGuard: AI-driven poultry disease detection</h3>
+        <p>Research reporting 93.73% test accuracy across four disease categories using 8,067 annotated images. Includes a Streamlit app with reporting, alerts, authentication and an analytics dashboard.</p>
+        <ul class="tags"><li>EfficientNet-B3</li><li>Streamlit</li><li>Publication</li></ul>
+        <div class="links"><a href="https://ieeexplore.ieee.org/document/11633003" target="_blank" rel="noopener">Read the IEEE Xplore paper</a></div>
+      </article>
+      <article class="card" data-t="ml">
+        <h3>Chicken disease classification</h3>
+        <p>Fecal-image classification using 8,500+ images, built in a team of four. I contributed to data collection, model development, testing, validation and deployment.</p>
+        <ul class="tags"><li>Python</li><li>CNN</li><li>Deep learning</li></ul>
+        <div class="links"><a href="https://github.com/Gauri0218/Classification-and-Detection-Of-Chicken-diseases-using-Fecal-images." target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card" data-t="ml web">
+        <h3>Emergency room triage predictor</h3>
+        <p>A web application that predicts patient urgency from symptoms and vital signs, with a nearby-hospital lookup.</p>
+        <ul class="tags"><li>Python</li><li>Flask</li><li>Machine learning</li></ul>
+        <div class="links"><a href="https://github.com/Gauri0218/ER_Triage_Predictor" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card" data-t="web">
+        <h3>eggBucket sales and inventory tracker</h3>
+        <p>A responsive tool for daily egg sales and stock tracking, with automated calculations and dynamic results.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <div class="links"><a href="https://github.com/Gauri0218/eggBucket" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card" data-t="web">
+        <h3>ByteLearn: gamified CS learning platform</h3>
+        <p>A responsive learning platform with adaptive quizzes, XP, streaks, badges, timed challenges and session persistence in localStorage.</p>
+        <ul class="tags"><li>React</li><li>Vite</li><li>JavaScript</li><li>CSS</li></ul>
+        <div class="links"><a href="https://github.com/Gauri0218/bytelearn-website" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skillgrid">
+      <div><h3>Analytics and BI</h3><ul class="tags"><li>SQL</li><li>Excel</li><li>Power BI</li><li>Tableau</li><li>Data cleaning</li><li>Trend analysis</li><li>Performance reporting</li></ul></div>
+      <div><h3>Python and data</h3><ul class="tags"><li>Python</li><li>Pandas</li><li>NumPy</li><li>scikit-learn</li></ul></div>
+      <div><h3>Machine learning</h3><ul class="tags"><li>Classification</li><li>CNNs</li><li>Deep learning</li><li>EfficientNet</li><li>Model evaluation</li></ul></div>
+      <div><h3>Databases</h3><ul class="tags"><li>MySQL</li><li>MongoDB</li></ul></div>
+      <div><h3>Programming and web</h3><ul class="tags"><li>Java</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>REST APIs</li><li>HTML</li><li>CSS</li><li>n8n</li></ul></div>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2>Education and learning</h2>
+    <div class="job">
+      <div class="when">Jul 2022 – Jun 2026</div>
+      <div><h3>B.E. in Information Science & Engineering</h3><div class="org">RNS Institute of Technology (RNSIT), Bengaluru</div></div>
+    </div>
+    <h3 style="margin-top:28px">Certifications and continued learning</h3>
+    <ul class="plain">
+      <li>Ultimate Job-Ready AI-Powered Data Analytics Course (Python, Pandas, NumPy, SQL, Excel, Power BI), CodeWithHarry. Completed.</li>
+      <li>Data Analytics Using Power BI workshop, Tech Tip 24, September 2026. Completed.</li>
+      <li>AI Powered Data Analytics Workshop, CodingWise, 5 days, October 2026. Completed.</li>
+      <li>AI Engineer Core Track (LLM engineering, RAG, QLoRA, agents), Ligency / Ed Donner. In progress.</li>
+      <li>Learn Coding with Java, SDE Arts. Completed. Hackathon at VJTI College, Mumbai.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>I’m open to data analyst and AI roles. The quickest way to reach me is email.</p>
+    <p class="big"><a href="mailto:gauri.singh.c178@gmail.com">gauri.singh.c178@gmail.com</a></p>
+    <button class="btn primary" id="copyEmail" type="button">Copy email</button>
+    <div class="btns">
+      <a class="btn ghost" href="Gauri_Singh_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/gauri-singh-3598b5259" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/Gauri0218" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://leetcode.com/u/GAURI2318" target="_blank" rel="noopener">LeetCode</a>
+    </div>
+  </section>
+
+  <footer>Gauri Singh, Bengaluru, India</footer>
+</div>
+<script>
+(function(){
+  var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!calm){
+    var els=document.querySelectorAll('.about,.job,.card,.skillgrid>div,.contact,#learning h3,#learning .plain');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+      els.forEach(function(el,i){el.classList.add('reveal');el.style.animationDelay=((i%3)*80)+'ms';io.observe(el)});
+    }
+    document.querySelectorAll('.glance dt').forEach(function(dt,i){
+      var m=dt.textContent.match(/^([\d,]+(?:\.\d+)?)(.*)$/);if(!m)return;
+      var end=parseFloat(m[1].replace(/,/g,'')),dec=(m[1].split('.')[1]||'').length,tail=m[2],t0=null,dur=1400;
+      function fmt(v){return v.toLocaleString('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec})+tail}
+      dt.textContent=fmt(0);
+      function step(ts){if(t0===null)t0=ts;var p=Math.min((ts-t0)/dur,1),e=1-Math.pow(1-p,3);dt.textContent=fmt(end*e);if(p<1)requestAnimationFrame(step)}
+      setTimeout(function(){requestAnimationFrame(step)},500+i*150);
+    });
+  }
+  var cb=document.getElementById('copyEmail');
+  if(cb){cb.addEventListener('click',function(){
+    var em='gauri.singh.c178@gmail.com';
+    function done(ok){cb.textContent=ok?'Copied!':'Select and copy the email above';setTimeout(function(){cb.textContent='Copy email'},2500)}
+    function fb(){try{var t=document.createElement('textarea');t.value=em;t.setAttribute('readonly','');t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();var ok=document.execCommand('copy');document.body.removeChild(t);done(ok)}catch(e){done(false)}}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(em).then(function(){done(true)},fb)}else{fb()}
+  })}
+  var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('#grid .card');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var f=c.getAttribute('data-f');
+      chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});
+      cards.forEach(function(card){
+        var t=(card.getAttribute('data-t')||'').split(' ');
+        card.hidden=!(f==='all'||t.indexOf(f)>-1);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
